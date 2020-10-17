@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+
+.btn{
+    cursor:pointer;
+}
+
+body{   
+    color: #212F3D
+}
+
+.clicked{
+    color:#7f8c8d;
+
+}
+
+.header {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size:25px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 900;
+  }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto 0;
+    top: 100px;
+  }
+
+
+.main .js-clock{
+font-size: 30px;
+}
+
+
+
+.form,
+.greetings{
+    display:none;
+    font-size: 30px;
+}
+
+.showing {
+    display:block;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    z-index:-1;
+    animation: fadeIn .5s linear;
+}
+
+.js-form,
+.js-toDoForm {
+  margin: 7px 0px;
+}
+
+.js-form input,
+.js-toDoForm input {
+  padding: 5px 15px;
+  border: 3px solid #d4d4d2;
+  border-radius: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #3a3a3a;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.js-form input:focus,
+.js-toDoForm input:focus {
+  outline: none;
+}
+
+.js-toDoList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .js-toDoList li {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .js-toDoList button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+  }
+
+ 
+  
